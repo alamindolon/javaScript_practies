@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Box</title>
+</head>
+<body>
+
+    <div id="comment-container">
+        <h1>Please Comment Box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquid molestiae nobis adipisci inventore, reprehenderit vel optio, enim dolore quisquam voluptates beatae sit, quidem illum ullam voluptatum eaque suscipit voluptate!</p>
+    </div>
+    <div>
+        <textarea name="" id="new-comment" cols="60" rows="5"></textarea>
+        <br>
+        <button id="btn-post">Post</button>
+    </div>
+    <script>
+        //step 1  added the post button
+        document.getElementById('btn-post').addEventListener('click',function(){
+
+            //step 2 get the comment inside the post area
+
+            const CommentBox = document.getElementById('new-comment');
+            const newComment = CommentBox.value;
+            
+            //step 3 
+            const commentContainer = document.getElementById('comment-container');
+            const p = document.createElement('p');
+            p.innerText = newComment;
+            commentContainer.appendChild(p);
+
+            // value emety jonno
+            CommentBox.value = '';
+            
+
+            
+
+
+
+
+
+        })
+
+    </script>
+    
+</body>
+</html>
