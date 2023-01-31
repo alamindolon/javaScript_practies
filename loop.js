@@ -1,8 +1,15 @@
 
-var numbers = [45,46,23,32,56,67,76,765];
+// var roastgiven = 0;
+// while(roastgiven < 7){
+//     console.log('roast den,please')
+//     roastgiven++;
+    
 
-for( var i=0; i<numbers.length; i++)
+// }
+
+var number = 1;
+while(number<10)
 {
-    var number = numbers[i];
     console.log(number);
+    number=number+2;
 }
