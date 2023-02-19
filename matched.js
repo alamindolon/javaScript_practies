@@ -11,9 +11,12 @@ function matchproduct (products, search)
 {
     const matched = [];
 
+     //for(let i = 0;i <= products.length;i++)
+    // const product = products(i)
+
     for(const product of products)
     {
-        if(product.name.includes(search))
+        if(product.name.toLowerCase().includes(search.toLowerCase()))
         {
             matched.push(product)
         }
@@ -21,5 +24,5 @@ function matchproduct (products, search)
     return matched;
 
 }
-const result = matchproduct(products, 'phone')
+const result = matchproduct(products, 'Phone')
 console.log(result);
