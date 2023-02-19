@@ -4,9 +4,10 @@ function removeDuplicate (names)
 {
     const nameadd=[];
 
-    for (let i= 0; i<names.length; i++)
+    // for (let i= 0; i<names.length; i++)
+    for(const name of names)
     {
-        const name = names[i];
+        // const name = names[i];
         if(nameadd.includes(name) === false)
         {
             nameadd.push(name);

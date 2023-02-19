@@ -1,11 +1,11 @@
-function factorial (num){
-    var factorial = 1;
-    for(var i= 1; i <= num; i++)
+function factorial (i){
+    if(i == 1)
     {
-        factorial= factorial * i;
-       
+        return 1;
+        
     }
-    return factorial;
+    return i * factorial(i-1);
+   
 }
- var result = factorial(10);
+ var result = factorial(5);
  console.log(result);
